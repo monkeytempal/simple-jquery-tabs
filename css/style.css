@@ -1,9 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Gudea:400,400italic,700);
 
-* {margin:0; padding:0;}
-
 body {font-family:'Gudea', Arial, Helvetica, sans-serif; font-size:12px; background:#e6e6e6;}
 a {text-decoration:none;}
+ul {margin: 0; padding: 0;}
 
 #header {width:100%; background:#34495E; border-bottom:3px solid #0B292D;}
 .topNav {background:#253749; width:100%; border-bottom:1px solid #0B292D;}
@@ -29,7 +28,7 @@ a {text-decoration:none;}
 
 
 /* Section contents */
-.container {font-size: 14px; padding: 40px;}
+.container {font-size: 14px; padding: 40px; max-width: 960px; margin: 0 auto;}
 
 /* Tabs Nav styles*/
 .tabs-nav li {display: inline-block; background: #34495E; border-width: 1px 1px 0 1px; border-style: solid; border-color: #34495E; margin-right:5px;}
@@ -40,7 +39,9 @@ a {text-decoration:none;}
 .tabs-nav li.active a {color: inherit;}
 
 /*Tabs Content styles*/
-.tabs-content {border:1px solid #34495E; padding: 10px; background: #FFF; margin-top: -1px;}
+.tabs-content {border:1px solid #34495E; padding: 10px; background: #FFF; margin-top: -1px; overflow:hidden;}
+.tabs-content h3 {margin-top: 0;}
+.tabs-content IMG {margin-right:10px;}
 
 /* Hide All the content divs EXCEPT the first one */
 .tabs-content div:not(:first-child) {display: none;}
